@@ -1,0 +1,17 @@
+{
+ "azurirano": "2026-11-07T21:00:00.000Z",
+ "demo": false,
+ "liga": {
+  "id": 1528780,
+  "naziv": "Ernest Hemingway"
+ },
+ "podesavanja": {
+  "nagrada": "Dres",
+  "velicinaBloka": 6,
+  "poslednjiBlok": "spojen"
+ },
+ "ukupnoKola": 38,
+ "zavrsenaKola": [],
+ "kola": [],
+ "igraci": []
+}

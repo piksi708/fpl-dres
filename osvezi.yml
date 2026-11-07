@@ -1,0 +1,34 @@
+name: Osveži podatke
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # svaki dan oko 06:17 ili 07:17 po našem vremenu
+  workflow_dispatch: # dugme za ručno pokretanje
+
+permissions:
+  contents: write
+
+jobs:
+  osvezi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Preuzmi podatke iz FPL-a
+        run: node scripts/fetch-data.mjs
+
+      - name: Sačuvaj izmene
+        run: |
+          if git diff --quiet -- data.json; then
+            echo "Nema promena."
+            exit 0
+          fi
+          git config user.name "fpl-bot"
+          git config user.email "fpl-bot@users.noreply.github.com"
+          git add data.json
+          git commit -m "Osvežen spisak bodova"
+          git push
