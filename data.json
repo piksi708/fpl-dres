@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-07T21:00:00.000Z",
+ "azurirano": "2026-11-07T21:14:49.997Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -11,7 +11,589 @@
   "poslednjiBlok": "spojen"
  },
  "ukupnoKola": 38,
- "zavrsenaKola": [],
- "kola": [],
- "igraci": []
+ "zavrsenaKola": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "kola": [
+  {
+   "id": 1,
+   "naziv": "Gameweek 1",
+   "zavrseno": true,
+   "rok": "2026-08-21T17:30:00Z"
+  },
+  {
+   "id": 2,
+   "naziv": "Gameweek 2",
+   "zavrseno": true,
+   "rok": "2026-08-28T17:30:00Z"
+  },
+  {
+   "id": 3,
+   "naziv": "Gameweek 3",
+   "zavrseno": true,
+   "rok": "2026-09-04T17:30:00Z"
+  },
+  {
+   "id": 4,
+   "naziv": "Gameweek 4",
+   "zavrseno": true,
+   "rok": "2026-09-12T12:30:00Z"
+  },
+  {
+   "id": 5,
+   "naziv": "Gameweek 5",
+   "zavrseno": true,
+   "rok": "2026-09-18T17:30:00Z"
+  },
+  {
+   "id": 6,
+   "naziv": "Gameweek 6",
+   "zavrseno": true,
+   "rok": "2026-10-10T10:00:00Z"
+  },
+  {
+   "id": 7,
+   "naziv": "Gameweek 7",
+   "zavrseno": true,
+   "rok": "2026-10-17T10:00:00Z"
+  },
+  {
+   "id": 8,
+   "naziv": "Gameweek 8",
+   "zavrseno": true,
+   "rok": "2026-10-23T17:30:00Z"
+  },
+  {
+   "id": 9,
+   "naziv": "Gameweek 9",
+   "zavrseno": true,
+   "rok": "2026-10-31T11:00:00Z"
+  },
+  {
+   "id": 10,
+   "naziv": "Gameweek 10",
+   "zavrseno": false,
+   "rok": "2026-11-06T18:30:00Z"
+  },
+  {
+   "id": 11,
+   "naziv": "Gameweek 11",
+   "zavrseno": false,
+   "rok": "2026-11-21T11:00:00Z"
+  },
+  {
+   "id": 12,
+   "naziv": "Gameweek 12",
+   "zavrseno": false,
+   "rok": "2026-11-27T18:30:00Z"
+  },
+  {
+   "id": 13,
+   "naziv": "Gameweek 13",
+   "zavrseno": false,
+   "rok": "2026-12-01T18:30:00Z"
+  },
+  {
+   "id": 14,
+   "naziv": "Gameweek 14",
+   "zavrseno": false,
+   "rok": "2026-12-05T11:00:00Z"
+  },
+  {
+   "id": 15,
+   "naziv": "Gameweek 15",
+   "zavrseno": false,
+   "rok": "2026-12-12T13:30:00Z"
+  },
+  {
+   "id": 16,
+   "naziv": "Gameweek 16",
+   "zavrseno": false,
+   "rok": "2026-12-19T11:00:00Z"
+  },
+  {
+   "id": 17,
+   "naziv": "Gameweek 17",
+   "zavrseno": false,
+   "rok": "2026-12-26T11:00:00Z"
+  },
+  {
+   "id": 18,
+   "naziv": "Gameweek 18",
+   "zavrseno": false,
+   "rok": "2026-12-29T18:00:00Z"
+  },
+  {
+   "id": 19,
+   "naziv": "Gameweek 19",
+   "zavrseno": false,
+   "rok": "2027-01-01T18:30:00Z"
+  },
+  {
+   "id": 20,
+   "naziv": "Gameweek 20",
+   "zavrseno": false,
+   "rok": "2027-01-05T18:00:00Z"
+  },
+  {
+   "id": 21,
+   "naziv": "Gameweek 21",
+   "zavrseno": false,
+   "rok": "2027-01-16T13:30:00Z"
+  },
+  {
+   "id": 22,
+   "naziv": "Gameweek 22",
+   "zavrseno": false,
+   "rok": "2027-01-23T13:30:00Z"
+  },
+  {
+   "id": 23,
+   "naziv": "Gameweek 23",
+   "zavrseno": false,
+   "rok": "2027-01-30T13:30:00Z"
+  },
+  {
+   "id": 24,
+   "naziv": "Gameweek 24",
+   "zavrseno": false,
+   "rok": "2027-02-06T13:30:00Z"
+  },
+  {
+   "id": 25,
+   "naziv": "Gameweek 25",
+   "zavrseno": false,
+   "rok": "2027-02-10T18:30:00Z"
+  },
+  {
+   "id": 26,
+   "naziv": "Gameweek 26",
+   "zavrseno": false,
+   "rok": "2027-02-20T13:30:00Z"
+  },
+  {
+   "id": 27,
+   "naziv": "Gameweek 27",
+   "zavrseno": false,
+   "rok": "2027-02-27T13:30:00Z"
+  },
+  {
+   "id": 28,
+   "naziv": "Gameweek 28",
+   "zavrseno": false,
+   "rok": "2027-03-03T18:30:00Z"
+  },
+  {
+   "id": 29,
+   "naziv": "Gameweek 29",
+   "zavrseno": false,
+   "rok": "2027-03-13T13:30:00Z"
+  },
+  {
+   "id": 30,
+   "naziv": "Gameweek 30",
+   "zavrseno": false,
+   "rok": "2027-03-20T13:30:00Z"
+  },
+  {
+   "id": 31,
+   "naziv": "Gameweek 31",
+   "zavrseno": false,
+   "rok": "2027-04-10T12:30:00Z"
+  },
+  {
+   "id": 32,
+   "naziv": "Gameweek 32",
+   "zavrseno": false,
+   "rok": "2027-04-17T12:30:00Z"
+  },
+  {
+   "id": 33,
+   "naziv": "Gameweek 33",
+   "zavrseno": false,
+   "rok": "2027-04-24T12:30:00Z"
+  },
+  {
+   "id": 34,
+   "naziv": "Gameweek 34",
+   "zavrseno": false,
+   "rok": "2027-05-01T12:30:00Z"
+  },
+  {
+   "id": 35,
+   "naziv": "Gameweek 35",
+   "zavrseno": false,
+   "rok": "2027-05-08T12:30:00Z"
+  },
+  {
+   "id": 36,
+   "naziv": "Gameweek 36",
+   "zavrseno": false,
+   "rok": "2027-05-15T12:30:00Z"
+  },
+  {
+   "id": 37,
+   "naziv": "Gameweek 37",
+   "zavrseno": false,
+   "rok": "2027-05-23T12:30:00Z"
+  },
+  {
+   "id": 38,
+   "naziv": "Gameweek 38",
+   "zavrseno": false,
+   "rok": "2027-05-30T13:30:00Z"
+  }
+ ],
+ "igraci": [
+  {
+   "id": 6831196,
+   "ime": "Matija Eterovic",
+   "tim": "SANI",
+   "kola": {
+    "1": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 68
+    },
+    "2": {
+     "bodovi": 125,
+     "minus": 0,
+     "ukupno": 193
+    },
+    "3": {
+     "bodovi": 47,
+     "minus": 0,
+     "ukupno": 240
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 310
+    },
+    "5": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 369
+    },
+    "6": {
+     "bodovi": 56,
+     "minus": 0,
+     "ukupno": 425
+    },
+    "7": {
+     "bodovi": 75,
+     "minus": 0,
+     "ukupno": 500
+    },
+    "8": {
+     "bodovi": 38,
+     "minus": 0,
+     "ukupno": 538
+    },
+    "9": {
+     "bodovi": 44,
+     "minus": 0,
+     "ukupno": 582
+    },
+    "10": {
+     "bodovi": 45,
+     "minus": 0,
+     "ukupno": 627
+    }
+   }
+  },
+  {
+   "id": 1696377,
+   "ime": "Nikola Davidoski",
+   "tim": "Buregdzije",
+   "kola": {
+    "1": {
+     "bodovi": 52,
+     "minus": 0,
+     "ukupno": 52
+    },
+    "2": {
+     "bodovi": 97,
+     "minus": 0,
+     "ukupno": 149
+    },
+    "3": {
+     "bodovi": 64,
+     "minus": 0,
+     "ukupno": 213
+    },
+    "4": {
+     "bodovi": 71,
+     "minus": 0,
+     "ukupno": 284
+    },
+    "5": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 354
+    },
+    "6": {
+     "bodovi": 76,
+     "minus": 0,
+     "ukupno": 430
+    },
+    "7": {
+     "bodovi": 76,
+     "minus": 0,
+     "ukupno": 506
+    },
+    "8": {
+     "bodovi": 51,
+     "minus": 0,
+     "ukupno": 557
+    },
+    "9": {
+     "bodovi": 38,
+     "minus": 0,
+     "ukupno": 595
+    },
+    "10": {
+     "bodovi": 2,
+     "minus": 0,
+     "ukupno": 597
+    }
+   }
+  },
+  {
+   "id": 6703521,
+   "ime": "Igor Avramovic",
+   "tim": "Avram0",
+   "kola": {
+    "1": {
+     "bodovi": 52,
+     "minus": 0,
+     "ukupno": 52
+    },
+    "2": {
+     "bodovi": 73,
+     "minus": 0,
+     "ukupno": 125
+    },
+    "3": {
+     "bodovi": 72,
+     "minus": 0,
+     "ukupno": 197
+    },
+    "4": {
+     "bodovi": 84,
+     "minus": 0,
+     "ukupno": 281
+    },
+    "5": {
+     "bodovi": 36,
+     "minus": 0,
+     "ukupno": 317
+    },
+    "6": {
+     "bodovi": 65,
+     "minus": 0,
+     "ukupno": 382
+    },
+    "7": {
+     "bodovi": 66,
+     "minus": 0,
+     "ukupno": 448
+    },
+    "8": {
+     "bodovi": 50,
+     "minus": 0,
+     "ukupno": 498
+    },
+    "9": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 557
+    },
+    "10": {
+     "bodovi": 35,
+     "minus": 0,
+     "ukupno": 592
+    }
+   }
+  },
+  {
+   "id": 7271133,
+   "ime": "David Milivojević",
+   "tim": "FC The LeadWay",
+   "kola": {
+    "1": {
+     "bodovi": 67,
+     "minus": 0,
+     "ukupno": 67
+    },
+    "2": {
+     "bodovi": 102,
+     "minus": 0,
+     "ukupno": 169
+    },
+    "3": {
+     "bodovi": 42,
+     "minus": 0,
+     "ukupno": 211
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 4,
+     "ukupno": 281
+    },
+    "5": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 330
+    },
+    "6": {
+     "bodovi": 61,
+     "minus": 0,
+     "ukupno": 391
+    },
+    "7": {
+     "bodovi": 79,
+     "minus": 4,
+     "ukupno": 470
+    },
+    "8": {
+     "bodovi": 43,
+     "minus": 0,
+     "ukupno": 513
+    },
+    "9": {
+     "bodovi": 48,
+     "minus": 4,
+     "ukupno": 561
+    },
+    "10": {
+     "bodovi": 20,
+     "minus": 0,
+     "ukupno": 581
+    }
+   }
+  },
+  {
+   "id": 8493356,
+   "ime": "Vlada Urakovic",
+   "tim": "fantasy_enjoyer",
+   "kola": {
+    "1": {
+     "bodovi": 54,
+     "minus": 0,
+     "ukupno": 54
+    },
+    "2": {
+     "bodovi": 107,
+     "minus": 0,
+     "ukupno": 161
+    },
+    "3": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 210
+    },
+    "4": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 278
+    },
+    "5": {
+     "bodovi": 31,
+     "minus": 0,
+     "ukupno": 309
+    },
+    "6": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 377
+    },
+    "7": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 447
+    },
+    "8": {
+     "bodovi": 35,
+     "minus": 0,
+     "ukupno": 482
+    },
+    "9": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 531
+    },
+    "10": {
+     "bodovi": 41,
+     "minus": 0,
+     "ukupno": 572
+    }
+   }
+  },
+  {
+   "id": 5060617,
+   "ime": "Djordje Krstic",
+   "tim": "fb badnjevac",
+   "kola": {
+    "1": {
+     "bodovi": 54,
+     "minus": 0,
+     "ukupno": 54
+    },
+    "2": {
+     "bodovi": 95,
+     "minus": 0,
+     "ukupno": 149
+    },
+    "3": {
+     "bodovi": 43,
+     "minus": 0,
+     "ukupno": 192
+    },
+    "4": {
+     "bodovi": 56,
+     "minus": 0,
+     "ukupno": 248
+    },
+    "5": {
+     "bodovi": 53,
+     "minus": 0,
+     "ukupno": 301
+    },
+    "6": {
+     "bodovi": 73,
+     "minus": 0,
+     "ukupno": 374
+    },
+    "7": {
+     "bodovi": 50,
+     "minus": 4,
+     "ukupno": 424
+    },
+    "8": {
+     "bodovi": 43,
+     "minus": 0,
+     "ukupno": 467
+    },
+    "9": {
+     "bodovi": 51,
+     "minus": 0,
+     "ukupno": 518
+    },
+    "10": {
+     "bodovi": 27,
+     "minus": 0,
+     "ukupno": 545
+    }
+   }
+  }
+ ]
 }
