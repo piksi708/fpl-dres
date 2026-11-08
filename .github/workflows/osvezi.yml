@@ -2,7 +2,7 @@ name: Osveži podatke
 
 on:
   schedule:
-    - cron: "17 5 * * *" # svaki dan oko 06:17 ili 07:17 po našem vremenu
+    - cron: "17 */6 * * *" # na svakih 6 sati, oko 01:17, 07:17, 13:17 i 19:17 po nasem vremenu
   workflow_dispatch: # dugme za ručno pokretanje
 
 permissions:
