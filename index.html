@@ -325,6 +325,36 @@ function tabelaPoKolima(data, izracun) {
   ]);
 }
 
+function ukupnaTabela(data, izracun) {
+  const ukupno = (ig) => data.zavrsenaKola.reduce((s, k) => s + (ig.kola[k]?.bodovi ?? 0), 0);
+  const redosled = [...data.igraci]
+    .map((ig) => ({ ig, bodovi: ukupno(ig) }))
+    .sort((a, b) => b.bodovi - a.bodovi || a.ig.ime.localeCompare(b.ig.ime, "sr"));
+  const vodja = redosled[0].bodovi;
+
+  const lista = el("ol", { class: "lista" });
+  redosled.forEach((r, idx) => {
+    // isti broj bodova znači isto mesto
+    const mesto = idx > 0 && redosled[idx - 1].bodovi === r.bodovi ? lista.children[idx - 1].dataset.mesto : String(idx + 1);
+    const vodi = r.bodovi === vodja;
+    const procenat = vodja > 0 ? Math.max(0, (r.bodovi / vodja) * 100) : 0;
+    const dresova = izracun.brojDresova.get(r.ig.id) || 0;
+    const tim = el("span", { class: "tim", text: dresova > 0 ? `${r.ig.tim} · dres ×${dresova}` : r.ig.tim });
+    const li = el("li", { class: "red" + (vodi ? " vodi" : "") }, [
+      el("span", { class: "traka", style: `--sirina:${procenat.toFixed(1)}%` }),
+      el("span", { class: "mesto", text: mesto }),
+      el("div", { class: "ime" }, [document.createTextNode(r.ig.ime), tim]),
+      el("div", { class: "bodovi" }, [
+        document.createTextNode(String(r.bodovi)),
+        el("span", { class: "razlika", text: vodi ? "vodi" : `−${vodja - r.bodovi}` }),
+      ]),
+    ]);
+    li.dataset.mesto = mesto;
+    lista.append(li);
+  });
+  return el("div", { class: "kartica" }, [lista]);
+}
+
 function pravila(data) {
   const p = data.podesavanja;
   const nagrada = p.nagrada || "Dres";
@@ -363,6 +393,16 @@ function nacrtaj(data) {
     delovi.push(el("section", {}, [el("h2", { text: "Trenutni blok" }), kartaTrenutnogBloka(izracun.trenutni)]));
   } else {
     delovi.push(el("section", {}, [el("div", { class: "kartica", text: "Sezona je završena. Svi blokovi su podeljeni." })]));
+  }
+
+  if (data.zavrsenaKola.length > 0) {
+    delovi.push(
+      el("section", {}, [
+        el("h2", { text: "Ukupna tabela" }),
+        ukupnaTabela(data, izracun),
+        el("p", { class: "beleska", text: `Zbir bodova svih završenih kola (${data.zavrsenaKola.length} od ${data.ukupnoKola}).` }),
+      ])
+    );
   }
 
   const dresSekcija = el("section", {}, [
