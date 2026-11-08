@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-07T21:14:49.997Z",
+ "azurirano": "2026-11-08T05:54:47.729Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -361,9 +361,9 @@
      "ukupno": 595
     },
     "10": {
-     "bodovi": 2,
+     "bodovi": 18,
      "minus": 0,
-     "ukupno": 597
+     "ukupno": 613
     }
    }
   },
