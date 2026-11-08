@@ -80,6 +80,7 @@
   .tim { display: block; color: var(--tekst-2); font-size: 0.8rem; font-weight: 400; overflow: hidden; text-overflow: ellipsis; }
   .bodovi { text-align: right; font-weight: 750; font-size: 1.15rem; }
   .razlika { display: block; font-size: 0.75rem; font-weight: 500; color: var(--tekst-2); }
+  .uzivo { display: block; margin-top: 2px; font-size: 0.8rem; color: var(--tekst-2); }
   .znak-dres { width: 18px; height: 18px; vertical-align: -3px; margin-left: 6px; color: var(--zelena); }
 
   .dresovi { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
@@ -194,9 +195,13 @@ function prikaziGresku(poruka) {
   koren.replaceChildren(el("div", { class: "poruka", text: poruka }));
 }
 
-function kartaTrenutnogBloka(b) {
+function kartaTrenutnogBloka(b, data) {
   const karta = el("div", { class: "kartica" });
   const brojKola = b.kola.length;
+  // Kolo u toku (ako je u ovom bloku i imamo bodove za njega)
+  const tece = b.kola.includes(data.tekuceKolo) ? data.tekuceKolo : null;
+  const uzivo = (ig) => (tece ? ig.kola?.[tece]?.bodovi : undefined);
+  const imaUzivo = tece && data.igraci.some((ig) => uzivo(ig) !== undefined);
 
   karta.append(
     el("div", { class: "glava-bloka" }, [
@@ -229,6 +234,7 @@ function kartaTrenutnogBloka(b) {
       document.createTextNode(r.igrac.ime),
       vodi ? dresIkona("znak-dres") : null,
       el("span", { class: "tim", text: r.igrac.tim }),
+      imaUzivo && uzivo(r.igrac) !== undefined ? el("span", { class: "uzivo", text: `Kolo ${tece}: ${uzivo(r.igrac)} bodova` }) : null,
     ]);
     const bod = el("div", { class: "bodovi" }, [
       document.createTextNode(String(r.bodovi)),
@@ -390,7 +396,7 @@ function nacrtaj(data) {
   }
 
   if (izracun.trenutni) {
-    delovi.push(el("section", {}, [el("h2", { text: "Trenutni blok" }), kartaTrenutnogBloka(izracun.trenutni)]));
+    delovi.push(el("section", {}, [el("h2", { text: "Trenutni blok" }), kartaTrenutnogBloka(izracun.trenutni, data)]));
   } else {
     delovi.push(el("section", {}, [el("div", { class: "kartica", text: "Sezona je završena. Svi blokovi su podeljeni." })]));
   }
