@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-08T05:54:47.729Z",
+ "azurirano": "2026-11-08T15:12:26.901Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -22,6 +22,7 @@
   8,
   9
  ],
+ "tekuceKolo": 10,
  "kola": [
   {
    "id": 1,
@@ -254,63 +255,6 @@
  ],
  "igraci": [
   {
-   "id": 6831196,
-   "ime": "Matija Eterovic",
-   "tim": "SANI",
-   "kola": {
-    "1": {
-     "bodovi": 68,
-     "minus": 0,
-     "ukupno": 68
-    },
-    "2": {
-     "bodovi": 125,
-     "minus": 0,
-     "ukupno": 193
-    },
-    "3": {
-     "bodovi": 47,
-     "minus": 0,
-     "ukupno": 240
-    },
-    "4": {
-     "bodovi": 70,
-     "minus": 0,
-     "ukupno": 310
-    },
-    "5": {
-     "bodovi": 59,
-     "minus": 0,
-     "ukupno": 369
-    },
-    "6": {
-     "bodovi": 56,
-     "minus": 0,
-     "ukupno": 425
-    },
-    "7": {
-     "bodovi": 75,
-     "minus": 0,
-     "ukupno": 500
-    },
-    "8": {
-     "bodovi": 38,
-     "minus": 0,
-     "ukupno": 538
-    },
-    "9": {
-     "bodovi": 44,
-     "minus": 0,
-     "ukupno": 582
-    },
-    "10": {
-     "bodovi": 45,
-     "minus": 0,
-     "ukupno": 627
-    }
-   }
-  },
-  {
    "id": 1696377,
    "ime": "Nikola Davidoski",
    "tim": "Buregdzije",
@@ -364,6 +308,63 @@
      "bodovi": 18,
      "minus": 0,
      "ukupno": 613
+    }
+   }
+  },
+  {
+   "id": 6831196,
+   "ime": "Matija Eterovic",
+   "tim": "SANI",
+   "kola": {
+    "1": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 68
+    },
+    "2": {
+     "bodovi": 125,
+     "minus": 0,
+     "ukupno": 193
+    },
+    "3": {
+     "bodovi": 47,
+     "minus": 0,
+     "ukupno": 240
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 310
+    },
+    "5": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 369
+    },
+    "6": {
+     "bodovi": 56,
+     "minus": 0,
+     "ukupno": 425
+    },
+    "7": {
+     "bodovi": 75,
+     "minus": 0,
+     "ukupno": 500
+    },
+    "8": {
+     "bodovi": 38,
+     "minus": 0,
+     "ukupno": 538
+    },
+    "9": {
+     "bodovi": 44,
+     "minus": 0,
+     "ukupno": 582
+    },
+    "10": {
+     "bodovi": 45,
+     "minus": 0,
+     "ukupno": 627
     }
    }
   },
