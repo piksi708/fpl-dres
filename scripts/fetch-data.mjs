@@ -44,6 +44,8 @@ const kola = opste.events.map((k) => ({
   rok: k.deadline_time,
 }));
 const ukupnoKola = kola.length;
+// Kolo koje je trenutno u toku (počelo je, a FPL ga još nije završio)
+const tekuceKolo = opste.events.find((k) => k.is_current && !k.finished)?.id ?? null;
 const zavrsenaKola = kola.filter((k) => k.zavrseno).map((k) => k.id);
 
 // 2. Svi igrači u ligi (strane po 50)
@@ -95,6 +97,7 @@ const izlaz = {
   },
   ukupnoKola,
   zavrsenaKola,
+  tekuceKolo,
   kola,
   igraci,
 };
