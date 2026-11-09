@@ -102,5 +102,17 @@ const izlaz = {
   igraci,
 };
 
-await writeFile(path.join(koren, "data.json"), JSON.stringify(izlaz, null, 1) + "\n");
+// Ako se ništa nije promenilo (osim vremena), ne diramo fajl, pa nema nepotrebnih izmena u repozitorijumu
+const putanja = path.join(koren, "data.json");
+try {
+  const staro = JSON.parse(await readFile(putanja, "utf8"));
+  const bez = (o) => JSON.stringify({ ...o, azurirano: null });
+  if (bez(staro) === bez(izlaz)) {
+    console.log("Nema promena u podacima.");
+    process.exit(0);
+  }
+} catch {
+  // nema starog fajla, upisujemo novi
+}
+await writeFile(putanja, JSON.stringify(izlaz, null, 1) + "\n");
 console.log(`Gotovo: ${igraci.length} igrača, završeno kola: ${zavrsenaKola.length}/${ukupnoKola}.`);
