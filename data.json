@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-09T13:23:22.546Z",
+ "azurirano": "2026-11-09T15:49:12.776Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -20,9 +20,10 @@
   6,
   7,
   8,
-  9
+  9,
+  10
  ],
- "tekuceKolo": 10,
+ "tekuceKolo": null,
  "kola": [
   {
    "id": 1,
@@ -81,7 +82,7 @@
   {
    "id": 10,
    "naziv": "Gameweek 10",
-   "zavrseno": false,
+   "zavrseno": true,
    "rok": "2026-11-06T18:30:00Z"
   },
   {
