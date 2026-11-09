@@ -207,7 +207,7 @@ function kartaTrenutnogBloka(b, data) {
     el("div", { class: "glava-bloka" }, [
       el("h3", { text: `Blok ${b.broj}` }),
       el("span", { class: "kola", text: `kola ${b.od}–${b.do}` }),
-      el("span", { class: "preostalo", text: `${b.zavrsenaKola.length} od ${brojKola} završeno, ${ostaloTekst(b.preostalo)}` }),
+      el("span", { class: "preostalo", text: `${b.zavrsenaKola.length} od ${brojKola} završeno, ${ostaloTekst(b.preostalo)}${imaUzivo ? ` · kolo ${tece} uživo` : ""}` }),
     ])
   );
 
@@ -219,14 +219,24 @@ function kartaTrenutnogBloka(b, data) {
   }
   karta.append(tackice, oznake);
 
-  if (b.zavrsenaKola.length === 0) {
+  if (b.zavrsenaKola.length === 0 && !imaUzivo) {
     karta.append(el("p", { class: "podnaslov", text: "Prvo kolo ovog bloka još nije završeno. Čim se završi, ovde se pojavljuje poredak." }));
     return karta;
   }
 
   const lista = el("ol", { class: "lista" });
-  const vodjaPoeni = b.najvise;
-  for (const r of b.redovi) {
+  // Ako je kolo u toku, poredak uključuje i njegove bodove uživo
+  let redovi = b.redovi;
+  if (imaUzivo) {
+    redovi = b.redovi
+      .map((r) => ({ ...r, bodovi: r.bodovi + (uzivo(r.igrac) ?? 0) }))
+      .sort((x, y) => y.bodovi - x.bodovi || x.igrac.ime.localeCompare(y.igrac.ime, "sr"));
+    redovi.forEach((r, i) => {
+      r.mesto = i > 0 && redovi[i - 1].bodovi === r.bodovi ? redovi[i - 1].mesto : i + 1;
+    });
+  }
+  const vodjaPoeni = Math.max(...redovi.map((r) => r.bodovi));
+  for (const r of redovi) {
     const vodi = r.bodovi === vodjaPoeni;
     const razlika = vodjaPoeni - r.bodovi;
     const procenat = vodjaPoeni > 0 ? Math.max(0, (r.bodovi / vodjaPoeni) * 100) : 0;
