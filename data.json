@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-09T07:36:33.195Z",
+ "azurirano": "2026-11-09T13:23:22.546Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -305,9 +305,9 @@
      "ukupno": 595
     },
     "10": {
-     "bodovi": 18,
+     "bodovi": 64,
      "minus": 0,
-     "ukupno": 613
+     "ukupno": 659
     }
    }
   },
@@ -362,9 +362,9 @@
      "ukupno": 582
     },
     "10": {
-     "bodovi": 45,
+     "bodovi": 55,
      "minus": 0,
-     "ukupno": 627
+     "ukupno": 637
     }
    }
   },
@@ -419,9 +419,9 @@
      "ukupno": 557
     },
     "10": {
-     "bodovi": 35,
+     "bodovi": 63,
      "minus": 0,
-     "ukupno": 592
+     "ukupno": 620
     }
    }
   },
@@ -476,9 +476,9 @@
      "ukupno": 561
     },
     "10": {
-     "bodovi": 20,
+     "bodovi": 54,
      "minus": 0,
-     "ukupno": 581
+     "ukupno": 615
     }
    }
   },
@@ -533,9 +533,9 @@
      "ukupno": 531
     },
     "10": {
-     "bodovi": 41,
+     "bodovi": 76,
      "minus": 0,
-     "ukupno": 572
+     "ukupno": 607
     }
    }
   },
@@ -590,9 +590,9 @@
      "ukupno": 518
     },
     "10": {
-     "bodovi": 27,
+     "bodovi": 56,
      "minus": 0,
-     "ukupno": 545
+     "ukupno": 574
     }
    }
   }
