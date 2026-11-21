@@ -85,6 +85,33 @@ for (const c of clanovi) {
   igraci.push({ ...c, kola: poKolu });
   await pauza(250); // ne opterećujemo FPL
 }
+// Stalan redosled (po ID-u), da promena mesta u tabeli lige ne pravi nepotrebne izmene fajla
+igraci.sort((a, b) => a.id - b.id);
+
+// 4. Bodovi kola koje je u toku, uživo. Istorija igrača ih dobija tek kad FPL obradi dan,
+// pa ih računamo iz bodova fudbalera u sastavu (kapiten računat duplo, minusi oduzeti).
+// Ako bilo šta ne uspe, ostaju bodovi iz istorije.
+if (tekuceKolo) {
+  try {
+    const uzivo = await get(`${BASE}/event/${tekuceKolo}/live/`);
+    const bodoviFudbalera = new Map(uzivo.elements.map((e) => [e.id, e.stats?.total_points ?? 0]));
+    const izracunato = new Map();
+    for (const ig of igraci) {
+      const sastav = await get(`${BASE}/entry/${ig.id}/event/${tekuceKolo}/picks/`);
+      let bruto = 0;
+      for (const p of sastav.picks) bruto += (bodoviFudbalera.get(p.element) ?? 0) * p.multiplier;
+      for (const s of sastav.automatic_subs || []) bruto += bodoviFudbalera.get(s.element_in) ?? 0;
+      const minus = sastav.entry_history?.event_transfers_cost || 0;
+      const bodovi = bruto - minus;
+      const prethodni = ig.kola[tekuceKolo - 1]?.ukupno ?? 0;
+      izracunato.set(ig.id, { bodovi, minus, ukupno: prethodni + bodovi });
+      await pauza(250);
+    }
+    for (const ig of igraci) ig.kola[tekuceKolo] = izracunato.get(ig.id);
+  } catch (e) {
+    console.warn(`Bodovi uživo nisu dostupni, ostaju bodovi iz istorije: ${e.message}`);
+  }
+}
 
 const izlaz = {
   azurirano: new Date().toISOString(),
