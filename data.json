@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-21T11:59:15.516Z",
+ "azurirano": "2026-11-21T18:56:41.596Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -318,68 +318,6 @@
    }
   },
   {
-   "id": 6831196,
-   "ime": "Matija Eterovic",
-   "tim": "SANI",
-   "kola": {
-    "1": {
-     "bodovi": 68,
-     "minus": 0,
-     "ukupno": 68
-    },
-    "2": {
-     "bodovi": 125,
-     "minus": 0,
-     "ukupno": 193
-    },
-    "3": {
-     "bodovi": 47,
-     "minus": 0,
-     "ukupno": 240
-    },
-    "4": {
-     "bodovi": 70,
-     "minus": 0,
-     "ukupno": 310
-    },
-    "5": {
-     "bodovi": 59,
-     "minus": 0,
-     "ukupno": 369
-    },
-    "6": {
-     "bodovi": 56,
-     "minus": 0,
-     "ukupno": 425
-    },
-    "7": {
-     "bodovi": 75,
-     "minus": 0,
-     "ukupno": 500
-    },
-    "8": {
-     "bodovi": 38,
-     "minus": 0,
-     "ukupno": 538
-    },
-    "9": {
-     "bodovi": 44,
-     "minus": 0,
-     "ukupno": 582
-    },
-    "10": {
-     "bodovi": 55,
-     "minus": 0,
-     "ukupno": 637
-    },
-    "11": {
-     "bodovi": 0,
-     "minus": 0,
-     "ukupno": 637
-    }
-   }
-  },
-  {
    "id": 6703521,
    "ime": "Igor Avramovic",
    "tim": "Avram0",
@@ -438,6 +376,68 @@
      "bodovi": 0,
      "minus": 0,
      "ukupno": 620
+    }
+   }
+  },
+  {
+   "id": 6831196,
+   "ime": "Matija Eterovic",
+   "tim": "SANI",
+   "kola": {
+    "1": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 68
+    },
+    "2": {
+     "bodovi": 125,
+     "minus": 0,
+     "ukupno": 193
+    },
+    "3": {
+     "bodovi": 47,
+     "minus": 0,
+     "ukupno": 240
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 310
+    },
+    "5": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 369
+    },
+    "6": {
+     "bodovi": 56,
+     "minus": 0,
+     "ukupno": 425
+    },
+    "7": {
+     "bodovi": 75,
+     "minus": 0,
+     "ukupno": 500
+    },
+    "8": {
+     "bodovi": 38,
+     "minus": 0,
+     "ukupno": 538
+    },
+    "9": {
+     "bodovi": 44,
+     "minus": 0,
+     "ukupno": 582
+    },
+    "10": {
+     "bodovi": 55,
+     "minus": 0,
+     "ukupno": 637
+    },
+    "11": {
+     "bodovi": 0,
+     "minus": 0,
+     "ukupno": 637
     }
    }
   },
