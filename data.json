@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-19T17:54:40.573Z",
+ "azurirano": "2026-11-21T11:59:15.516Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -23,7 +23,7 @@
   9,
   10
  ],
- "tekuceKolo": null,
+ "tekuceKolo": 11,
  "kola": [
   {
    "id": 1,
@@ -309,6 +309,11 @@
      "bodovi": 64,
      "minus": 0,
      "ukupno": 659
+    },
+    "11": {
+     "bodovi": 0,
+     "minus": 0,
+     "ukupno": 659
     }
    }
   },
@@ -364,6 +369,11 @@
     },
     "10": {
      "bodovi": 55,
+     "minus": 0,
+     "ukupno": 637
+    },
+    "11": {
+     "bodovi": 0,
      "minus": 0,
      "ukupno": 637
     }
@@ -423,6 +433,11 @@
      "bodovi": 63,
      "minus": 0,
      "ukupno": 620
+    },
+    "11": {
+     "bodovi": 0,
+     "minus": 0,
+     "ukupno": 620
     }
    }
   },
@@ -479,6 +494,11 @@
     "10": {
      "bodovi": 54,
      "minus": 0,
+     "ukupno": 615
+    },
+    "11": {
+     "bodovi": 0,
+     "minus": 4,
      "ukupno": 615
     }
    }
@@ -537,6 +557,11 @@
      "bodovi": 76,
      "minus": 0,
      "ukupno": 607
+    },
+    "11": {
+     "bodovi": 0,
+     "minus": 0,
+     "ukupno": 607
     }
    }
   },
@@ -592,6 +617,11 @@
     },
     "10": {
      "bodovi": 56,
+     "minus": 0,
+     "ukupno": 574
+    },
+    "11": {
+     "bodovi": 0,
      "minus": 0,
      "ukupno": 574
     }
