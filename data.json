@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-21T18:56:41.596Z",
+ "azurirano": "2026-11-21T23:42:16.082Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -311,257 +311,9 @@
      "ukupno": 659
     },
     "11": {
-     "bodovi": 0,
+     "bodovi": 24,
      "minus": 0,
-     "ukupno": 659
-    }
-   }
-  },
-  {
-   "id": 6703521,
-   "ime": "Igor Avramovic",
-   "tim": "Avram0",
-   "kola": {
-    "1": {
-     "bodovi": 52,
-     "minus": 0,
-     "ukupno": 52
-    },
-    "2": {
-     "bodovi": 73,
-     "minus": 0,
-     "ukupno": 125
-    },
-    "3": {
-     "bodovi": 72,
-     "minus": 0,
-     "ukupno": 197
-    },
-    "4": {
-     "bodovi": 84,
-     "minus": 0,
-     "ukupno": 281
-    },
-    "5": {
-     "bodovi": 36,
-     "minus": 0,
-     "ukupno": 317
-    },
-    "6": {
-     "bodovi": 65,
-     "minus": 0,
-     "ukupno": 382
-    },
-    "7": {
-     "bodovi": 66,
-     "minus": 0,
-     "ukupno": 448
-    },
-    "8": {
-     "bodovi": 50,
-     "minus": 0,
-     "ukupno": 498
-    },
-    "9": {
-     "bodovi": 59,
-     "minus": 0,
-     "ukupno": 557
-    },
-    "10": {
-     "bodovi": 63,
-     "minus": 0,
-     "ukupno": 620
-    },
-    "11": {
-     "bodovi": 0,
-     "minus": 0,
-     "ukupno": 620
-    }
-   }
-  },
-  {
-   "id": 6831196,
-   "ime": "Matija Eterovic",
-   "tim": "SANI",
-   "kola": {
-    "1": {
-     "bodovi": 68,
-     "minus": 0,
-     "ukupno": 68
-    },
-    "2": {
-     "bodovi": 125,
-     "minus": 0,
-     "ukupno": 193
-    },
-    "3": {
-     "bodovi": 47,
-     "minus": 0,
-     "ukupno": 240
-    },
-    "4": {
-     "bodovi": 70,
-     "minus": 0,
-     "ukupno": 310
-    },
-    "5": {
-     "bodovi": 59,
-     "minus": 0,
-     "ukupno": 369
-    },
-    "6": {
-     "bodovi": 56,
-     "minus": 0,
-     "ukupno": 425
-    },
-    "7": {
-     "bodovi": 75,
-     "minus": 0,
-     "ukupno": 500
-    },
-    "8": {
-     "bodovi": 38,
-     "minus": 0,
-     "ukupno": 538
-    },
-    "9": {
-     "bodovi": 44,
-     "minus": 0,
-     "ukupno": 582
-    },
-    "10": {
-     "bodovi": 55,
-     "minus": 0,
-     "ukupno": 637
-    },
-    "11": {
-     "bodovi": 0,
-     "minus": 0,
-     "ukupno": 637
-    }
-   }
-  },
-  {
-   "id": 7271133,
-   "ime": "David Milivojević",
-   "tim": "FC The LeadWay",
-   "kola": {
-    "1": {
-     "bodovi": 67,
-     "minus": 0,
-     "ukupno": 67
-    },
-    "2": {
-     "bodovi": 102,
-     "minus": 0,
-     "ukupno": 169
-    },
-    "3": {
-     "bodovi": 42,
-     "minus": 0,
-     "ukupno": 211
-    },
-    "4": {
-     "bodovi": 70,
-     "minus": 4,
-     "ukupno": 281
-    },
-    "5": {
-     "bodovi": 49,
-     "minus": 0,
-     "ukupno": 330
-    },
-    "6": {
-     "bodovi": 61,
-     "minus": 0,
-     "ukupno": 391
-    },
-    "7": {
-     "bodovi": 79,
-     "minus": 4,
-     "ukupno": 470
-    },
-    "8": {
-     "bodovi": 43,
-     "minus": 0,
-     "ukupno": 513
-    },
-    "9": {
-     "bodovi": 48,
-     "minus": 4,
-     "ukupno": 561
-    },
-    "10": {
-     "bodovi": 54,
-     "minus": 0,
-     "ukupno": 615
-    },
-    "11": {
-     "bodovi": 0,
-     "minus": 4,
-     "ukupno": 615
-    }
-   }
-  },
-  {
-   "id": 8493356,
-   "ime": "Vlada Urakovic",
-   "tim": "fantasy_enjoyer",
-   "kola": {
-    "1": {
-     "bodovi": 54,
-     "minus": 0,
-     "ukupno": 54
-    },
-    "2": {
-     "bodovi": 107,
-     "minus": 0,
-     "ukupno": 161
-    },
-    "3": {
-     "bodovi": 49,
-     "minus": 0,
-     "ukupno": 210
-    },
-    "4": {
-     "bodovi": 68,
-     "minus": 0,
-     "ukupno": 278
-    },
-    "5": {
-     "bodovi": 31,
-     "minus": 0,
-     "ukupno": 309
-    },
-    "6": {
-     "bodovi": 68,
-     "minus": 0,
-     "ukupno": 377
-    },
-    "7": {
-     "bodovi": 70,
-     "minus": 0,
-     "ukupno": 447
-    },
-    "8": {
-     "bodovi": 35,
-     "minus": 0,
-     "ukupno": 482
-    },
-    "9": {
-     "bodovi": 49,
-     "minus": 0,
-     "ukupno": 531
-    },
-    "10": {
-     "bodovi": 76,
-     "minus": 0,
-     "ukupno": 607
-    },
-    "11": {
-     "bodovi": 0,
-     "minus": 0,
-     "ukupno": 607
+     "ukupno": 683
     }
    }
   },
@@ -621,9 +373,257 @@
      "ukupno": 574
     },
     "11": {
-     "bodovi": 0,
+     "bodovi": 30,
      "minus": 0,
-     "ukupno": 574
+     "ukupno": 604
+    }
+   }
+  },
+  {
+   "id": 6703521,
+   "ime": "Igor Avramovic",
+   "tim": "Avram0",
+   "kola": {
+    "1": {
+     "bodovi": 52,
+     "minus": 0,
+     "ukupno": 52
+    },
+    "2": {
+     "bodovi": 73,
+     "minus": 0,
+     "ukupno": 125
+    },
+    "3": {
+     "bodovi": 72,
+     "minus": 0,
+     "ukupno": 197
+    },
+    "4": {
+     "bodovi": 84,
+     "minus": 0,
+     "ukupno": 281
+    },
+    "5": {
+     "bodovi": 36,
+     "minus": 0,
+     "ukupno": 317
+    },
+    "6": {
+     "bodovi": 65,
+     "minus": 0,
+     "ukupno": 382
+    },
+    "7": {
+     "bodovi": 66,
+     "minus": 0,
+     "ukupno": 448
+    },
+    "8": {
+     "bodovi": 50,
+     "minus": 0,
+     "ukupno": 498
+    },
+    "9": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 557
+    },
+    "10": {
+     "bodovi": 63,
+     "minus": 0,
+     "ukupno": 620
+    },
+    "11": {
+     "bodovi": 47,
+     "minus": 0,
+     "ukupno": 667
+    }
+   }
+  },
+  {
+   "id": 6831196,
+   "ime": "Matija Eterovic",
+   "tim": "SANI",
+   "kola": {
+    "1": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 68
+    },
+    "2": {
+     "bodovi": 125,
+     "minus": 0,
+     "ukupno": 193
+    },
+    "3": {
+     "bodovi": 47,
+     "minus": 0,
+     "ukupno": 240
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 310
+    },
+    "5": {
+     "bodovi": 59,
+     "minus": 0,
+     "ukupno": 369
+    },
+    "6": {
+     "bodovi": 56,
+     "minus": 0,
+     "ukupno": 425
+    },
+    "7": {
+     "bodovi": 75,
+     "minus": 0,
+     "ukupno": 500
+    },
+    "8": {
+     "bodovi": 38,
+     "minus": 0,
+     "ukupno": 538
+    },
+    "9": {
+     "bodovi": 44,
+     "minus": 0,
+     "ukupno": 582
+    },
+    "10": {
+     "bodovi": 55,
+     "minus": 0,
+     "ukupno": 637
+    },
+    "11": {
+     "bodovi": 20,
+     "minus": 0,
+     "ukupno": 657
+    }
+   }
+  },
+  {
+   "id": 7271133,
+   "ime": "David Milivojević",
+   "tim": "FC The LeadWay",
+   "kola": {
+    "1": {
+     "bodovi": 67,
+     "minus": 0,
+     "ukupno": 67
+    },
+    "2": {
+     "bodovi": 102,
+     "minus": 0,
+     "ukupno": 169
+    },
+    "3": {
+     "bodovi": 42,
+     "minus": 0,
+     "ukupno": 211
+    },
+    "4": {
+     "bodovi": 70,
+     "minus": 4,
+     "ukupno": 281
+    },
+    "5": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 330
+    },
+    "6": {
+     "bodovi": 61,
+     "minus": 0,
+     "ukupno": 391
+    },
+    "7": {
+     "bodovi": 79,
+     "minus": 4,
+     "ukupno": 470
+    },
+    "8": {
+     "bodovi": 43,
+     "minus": 0,
+     "ukupno": 513
+    },
+    "9": {
+     "bodovi": 48,
+     "minus": 4,
+     "ukupno": 561
+    },
+    "10": {
+     "bodovi": 54,
+     "minus": 0,
+     "ukupno": 615
+    },
+    "11": {
+     "bodovi": 30,
+     "minus": 4,
+     "ukupno": 645
+    }
+   }
+  },
+  {
+   "id": 8493356,
+   "ime": "Vlada Urakovic",
+   "tim": "fantasy_enjoyer",
+   "kola": {
+    "1": {
+     "bodovi": 54,
+     "minus": 0,
+     "ukupno": 54
+    },
+    "2": {
+     "bodovi": 107,
+     "minus": 0,
+     "ukupno": 161
+    },
+    "3": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 210
+    },
+    "4": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 278
+    },
+    "5": {
+     "bodovi": 31,
+     "minus": 0,
+     "ukupno": 309
+    },
+    "6": {
+     "bodovi": 68,
+     "minus": 0,
+     "ukupno": 377
+    },
+    "7": {
+     "bodovi": 70,
+     "minus": 0,
+     "ukupno": 447
+    },
+    "8": {
+     "bodovi": 35,
+     "minus": 0,
+     "ukupno": 482
+    },
+    "9": {
+     "bodovi": 49,
+     "minus": 0,
+     "ukupno": 531
+    },
+    "10": {
+     "bodovi": 76,
+     "minus": 0,
+     "ukupno": 607
+    },
+    "11": {
+     "bodovi": 15,
+     "minus": 0,
+     "ukupno": 622
     }
    }
   }
