@@ -29,8 +29,8 @@ jobs:
         run: |
           git config user.name "fpl-bot"
           git config user.email "fpl-bot@users.noreply.github.com"
-          # Dok je kolo u toku, proveravamo na svakih 10 minuta (5 puta po pokretanju).
-          # Kad nijedno kolo nije u toku, dovoljna je jedna provera.
+          # Dok se igraju utakmice, proveravamo na svakih 10 minuta (5 puta po pokretanju).
+          # Kad nema utakmica u toku, dovoljna je jedna provera (hvata završetak kola i konačne bodove).
           for i in 1 2 3 4 5; do
             node scripts/fetch-data.mjs || echo "FPL trenutno ne odgovara, probamo sledeći put."
             if ! git diff --quiet -- data.json; then
@@ -40,6 +40,6 @@ jobs:
             else
               echo "Nema promena."
             fi
-            node -e "process.exit(JSON.parse(require('fs').readFileSync('data.json','utf8')).tekuceKolo ? 0 : 1)" || break
+            node scripts/aktivno.mjs || break
             [ "$i" -lt 5 ] && sleep 600
           done

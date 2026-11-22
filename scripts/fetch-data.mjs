@@ -88,6 +88,17 @@ for (const c of clanovi) {
 // Stalan redosled (po ID-u), da promena mesta u tabeli lige ne pravi nepotrebne izmene fajla
 igraci.sort((a, b) => a.id - b.id);
 
+// Kad počinju utakmice kola u toku. Po tome workflow zna kad ima smisla proveravati češće.
+let utakmice = null;
+if (tekuceKolo) {
+  try {
+    const raspored = await get(`${BASE}/fixtures/?event=${tekuceKolo}`);
+    utakmice = raspored.map((f) => f.kickoff_time).filter(Boolean).sort();
+  } catch (e) {
+    console.warn(`Raspored utakmica nije dostupan: ${e.message}`);
+  }
+}
+
 // 4. Bodovi kola koje je u toku, uživo. Istorija igrača ih dobija tek kad FPL obradi dan,
 // pa ih računamo iz bodova fudbalera u sastavu (kapiten računat duplo, minusi oduzeti).
 // Ako bilo šta ne uspe, ostaju bodovi iz istorije.
@@ -125,6 +136,7 @@ const izlaz = {
   ukupnoKola,
   zavrsenaKola,
   tekuceKolo,
+  utakmice,
   kola,
   igraci,
 };
