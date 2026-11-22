@@ -455,14 +455,31 @@ function nacrtaj(data) {
   koren.replaceChildren(...delovi);
 }
 
+let poslednje = null;
 try {
   const odgovor = await fetch("data.json", { cache: "no-cache" });
   if (!odgovor.ok) throw new Error(`HTTP ${odgovor.status}`);
-  nacrtaj(await odgovor.json());
+  poslednje = await odgovor.json();
+  nacrtaj(poslednje);
 } catch (e) {
   prikaziGresku("Ne mogu da učitam data.json. Ako stranicu otvaraš direktno iz fajla, pokreni je preko lokalnog servera ili je objavi na GitHub Pages.");
   console.error(e);
 }
+
+// Dok je stranica otvorena, na svakih 5 minuta proveri ima li novih podataka
+setInterval(async () => {
+  try {
+    const odgovor = await fetch("data.json", { cache: "no-cache" });
+    if (!odgovor.ok) return;
+    const novo = await odgovor.json();
+    if (novo.azurirano !== poslednje?.azurirano) {
+      poslednje = novo;
+      nacrtaj(novo);
+    }
+  } catch {
+    // ostaju stari podaci do sledeće provere
+  }
+}, 5 * 60 * 1000);
 </script>
 </body>
 </html>

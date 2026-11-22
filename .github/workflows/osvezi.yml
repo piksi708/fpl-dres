@@ -2,15 +2,22 @@ name: Osveži podatke
 
 on:
   schedule:
-    - cron: "*/30 * * * *" # na svakih 30 minuta, kad nema promena nista se ne upisuje
+    # Dvaput na sat, namerno ne na pun sat ni na pola sata: tada GitHub preskače najviše zakazanih pokretanja
+    - cron: "7,37 * * * *"
   workflow_dispatch: # dugme za ručno pokretanje
 
 permissions:
   contents: write
 
+# Dok jedno pokretanje radi, sledeće čeka (ne rade dva istovremeno)
+concurrency:
+  group: osvezi
+  cancel-in-progress: false
+
 jobs:
   osvezi:
     runs-on: ubuntu-latest
+    timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
 
@@ -18,17 +25,21 @@ jobs:
         with:
           node-version: 22
 
-      - name: Preuzmi podatke iz FPL-a
-        run: node scripts/fetch-data.mjs
-
-      - name: Sačuvaj izmene
+      - name: Preuzmi podatke iz FPL-a i sačuvaj izmene
         run: |
-          if git diff --quiet -- data.json; then
-            echo "Nema promena."
-            exit 0
-          fi
           git config user.name "fpl-bot"
           git config user.email "fpl-bot@users.noreply.github.com"
-          git add data.json
-          git commit -m "Osvežen spisak bodova"
-          git push
+          # Dok je kolo u toku, proveravamo na svakih 10 minuta (5 puta po pokretanju).
+          # Kad nijedno kolo nije u toku, dovoljna je jedna provera.
+          for i in 1 2 3 4 5; do
+            node scripts/fetch-data.mjs || echo "FPL trenutno ne odgovara, probamo sledeći put."
+            if ! git diff --quiet -- data.json; then
+              git add data.json
+              git commit -m "Osvežen spisak bodova"
+              git pull --rebase -q origin main && git push -q
+            else
+              echo "Nema promena."
+            fi
+            node -e "process.exit(JSON.parse(require('fs').readFileSync('data.json','utf8')).tekuceKolo ? 0 : 1)" || break
+            [ "$i" -lt 5 ] && sleep 600
+          done
