@@ -244,7 +244,7 @@ function kartaTrenutnogBloka(b, data) {
       document.createTextNode(r.igrac.ime),
       vodi ? dresIkona("znak-dres") : null,
       el("span", { class: "tim", text: r.igrac.tim }),
-      imaUzivo && uzivo(r.igrac) !== undefined ? el("span", { class: "uzivo", text: `Kolo ${tece}: ${uzivo(r.igrac)} bodova` }) : null,
+      imaUzivo && uzivo(r.igrac) !== undefined ? el("span", { class: "uzivo", text: `Kolo ${tece}: ${uzivo(r.igrac)} bodova` + (r.igrac.kola?.[tece]?.minus ? ` (${uzivo(r.igrac) + r.igrac.kola[tece].minus} − ${r.igrac.kola[tece].minus} minus)` : "") }) : null,
     ]);
     const bod = el("div", { class: "bodovi" }, [
       document.createTextNode(String(r.bodovi)),
