@@ -342,7 +342,9 @@ function tabelaPoKolima(data, izracun) {
 }
 
 function ukupnaTabela(data, izracun) {
-  const ukupno = (ig) => data.zavrsenaKola.reduce((s, k) => s + (ig.kola[k]?.bodovi ?? 0), 0);
+  // Završena kola, plus kolo u toku (uživo) ako ga imamo
+  const tece = data.tekuceKolo && data.igraci.some((ig) => ig.kola[data.tekuceKolo] !== undefined) ? data.tekuceKolo : null;
+  const ukupno = (ig) => data.zavrsenaKola.reduce((s, k) => s + (ig.kola[k]?.bodovi ?? 0), 0) + (tece ? ig.kola[tece]?.bodovi ?? 0 : 0);
   const redosled = [...data.igraci]
     .map((ig) => ({ ig, bodovi: ukupno(ig) }))
     .sort((a, b) => b.bodovi - a.bodovi || a.ig.ime.localeCompare(b.ig.ime, "sr"));
@@ -377,7 +379,7 @@ function pravila(data) {
   const stavke = [
     `Na svakih ${p.velicinaBloka} završenih kola, ${nagrada.toLowerCase()} osvaja onaj sa najviše bodova u tom bloku.`,
     "Računaju se zvanični bodovi sa FPL-a, sa minusima za transfere.",
-    "Kolo se računa tek kad ga FPL označi kao završeno.",
+    "Kolo u toku se prikazuje uživo, a zvanično se računa tek kad ga FPL označi kao završeno.",
     "Ako dvojica imaju isti broj bodova u bloku, dogovorite se.",
   ];
   if (p.poslednjiBlok === "spojen") stavke.push(`Poslednja kola sezone se spajaju sa prethodnim blokom.`);
@@ -416,7 +418,7 @@ function nacrtaj(data) {
       el("section", {}, [
         el("h2", { text: "Ukupna tabela" }),
         ukupnaTabela(data, izracun),
-        el("p", { class: "beleska", text: `Zbir bodova svih završenih kola (${data.zavrsenaKola.length} od ${data.ukupnoKola}).` }),
+        el("p", { class: "beleska", text: `Zbir bodova svih završenih kola (${data.zavrsenaKola.length} od ${data.ukupnoKola})${data.tekuceKolo && data.igraci.some((ig) => ig.kola[data.tekuceKolo] !== undefined) ? ` i kola ${data.tekuceKolo} uživo` : ""}.` }),
       ])
     );
   }
