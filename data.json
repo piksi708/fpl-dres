@@ -1,5 +1,5 @@
 {
- "azurirano": "2026-11-28T16:53:28.603Z",
+ "azurirano": "2026-11-28T17:03:33.481Z",
  "demo": false,
  "liga": {
   "id": 1528780,
@@ -396,9 +396,9 @@
      "ukupno": 615
     },
     "12": {
-     "bodovi": 29,
+     "bodovi": 27,
      "minus": 0,
-     "ukupno": 644
+     "ukupno": 642
     }
    }
   },
@@ -597,9 +597,9 @@
      "ukupno": 655
     },
     "12": {
-     "bodovi": 14,
+     "bodovi": 12,
      "minus": 4,
-     "ukupno": 669
+     "ukupno": 667
     }
    }
   },
@@ -664,9 +664,9 @@
      "ukupno": 627
     },
     "12": {
-     "bodovi": 22,
+     "bodovi": 20,
      "minus": 4,
-     "ukupno": 649
+     "ukupno": 647
     }
    }
   }
